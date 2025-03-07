@@ -1,0 +1,136 @@
+/* Property Types Section */
+.property-types {
+  padding: 2rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.property-types h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.property-card {
+  text-decoration: none;
+  color: inherit;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+}
+
+.property-image {
+  position: relative;
+  aspect-ratio: 3/2;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.property-card h3 {
+  margin-top: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Trending Destinations Section */
+.trending-destinations {
+  padding: 2rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.trending-destinations h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.trending-destinations p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.destinations-grid > *:nth-child(1),
+.destinations-grid > *:nth-child(2) {
+  grid-column: span 1;
+}
+
+.destinations-grid > *:nth-child(n+3) {
+  grid-column: span 1;
+}
+
+.destination-card {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+}
+
+.destination-image {
+  position: relative;
+  aspect-ratio: 16/9;
+}
+
+.destination-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.destination-title h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .destinations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .destinations-grid > * {
+    grid-column: span 1 !important;
+  }
+
+  .property-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+/* Image Styles */
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
