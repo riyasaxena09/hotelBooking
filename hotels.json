@@ -1,0 +1,50 @@
+{
+  "hotels": [
+    {
+      "id": 1,
+      "name": "Luxury Palace Hotel",
+      "location": "New Delhi",
+      "price": 5000,
+      "rating": 4.5,
+      "images": ["/images/hotel1.jpg"],
+      "amenities": ["WiFi", "Pool", "Spa", "Restaurant"],
+      "rooms": [
+        {
+          "id": "101",
+          "type": "Deluxe",
+          "capacity": 3,
+          "price": 5000
+        },
+        {
+          "id": "102",
+          "type": "Suite",
+          "capacity": 4,
+          "price": 8000
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Green Valley Resort",
+      "location": "Bangalore",
+      "price": 6000,
+      "rating": 4.7,
+      "images": ["/images/hotel2.jpg"],
+      "amenities": ["WiFi", "Pool", "Gym", "Restaurant"],
+      "rooms": [
+        {
+          "id": "201",
+          "type": "Deluxe",
+          "capacity": 3,
+          "price": 6000
+        },
+        {
+          "id": "202",
+          "type": "Suite",
+          "capacity": 4,
+          "price": 9000
+        }
+      ]
+    }
+  ]
+}

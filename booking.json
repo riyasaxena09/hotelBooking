@@ -1,0 +1,26 @@
+{
+  "bookings": [
+    {
+      "id": 1,
+      "userId": 1,
+      "hotelId": 1,
+      "roomId": "101",
+      "checkIn": "2024-03-20",
+      "checkOut": "2024-03-25",
+      "guests": [
+        {
+          "name": "John Doe",
+          "age": 35,
+          "aadharNumber": "1234-5678-9012"
+        },
+        {
+          "name": "Jane Doe",
+          "age": 32,
+          "aadharNumber": "9876-5432-1098"
+        }
+      ],
+      "status": "confirmed",
+      "totalAmount": 25000
+    }
+  ]
+}
